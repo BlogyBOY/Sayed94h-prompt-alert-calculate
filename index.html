@@ -10,9 +10,14 @@
   <link rel="stylesheet" href="./style.css">
 
   <!-- load the shared data -->
+
+  
+
   <script src='./scripts/shared-variables.js'></script>
 
+
   <!-- load the handler scripts -->
+  
 
   <script src='./scripts/handlers/add.js'></script>
   <script src='./scripts/handlers/divide.js'></script>
@@ -26,10 +31,22 @@
   <!-- Leave this here!  It renders the review buttons  -->
   
   <script src='./review-buttons/init.js'></script>
-
+  
+  
 </head>
 
 <body>
+
+  <section class="sec-add">
+    <div class="button-add">
+      <button id="add" onclick="addHandler()">+</button>
+    </div>
+
+  </section>
+<!--add- Galal-->
+  <script src="/scripts/shared-variables.js"></script>
+  <script src="/scripts/handlers/add.js"></script>
+
   <div id='user-interface' class='centered'>
     <button onclick='addHandler()'>Sum of some numbers</button> <br>
     <button onclick='divideHandler()'>Divide some numbers</button> <br>
@@ -40,6 +57,7 @@
     <button onclick='multiplyHandler()'>Multiply some numbers</button> <br>
     <button onclick='subtractHandler()'>Subtract some numbers</button> <br>
   </div>
+
 </body>
 
 </html>

@@ -1,4 +1,24 @@
 
+.button-add {
+	text-align: center;
+	margin-top: 35px;
+	width: 100%;
+	font-size: 150px;
+	display: block;
+	cursor: pointer;
+	background-color: skyblue;
+	padding: 20px 30px;
+}
+
+#add {
+	width: 15%;
+	height: 50px;
+	color: black;
+	background-color: chartreuse;
+	font-size: 40px;
+}
+
+
 .centered {
 
     margin: 30vh 30vw 0 30vw;
@@ -8,3 +28,4 @@
 
     margin-top: 3vh;
 }
+
