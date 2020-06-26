@@ -92,8 +92,8 @@ __As a site visitor, I want to execute the function `subtract`__
 
 ### Repo
 
-- [ ] developed on a branch named `subtract`
-- [ ] finish the function 'subtract.js`
+- [x] developed on a branch named `subtract`
+- [x] finish the function 'subtract.js`
 
 
 ### JavaScript

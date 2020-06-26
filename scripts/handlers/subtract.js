@@ -12,7 +12,7 @@ function subtract(x, y) {
   if (typeof x !== 'number') { throw new TypeError('x'); }
   if (typeof y !== 'number') { throw new TypeError('y'); }
 
-  const result = _;
+  const result = x - y;
 
   if (typeof result !== 'number') { throw new TypeError('result'); }
   return result;
@@ -83,10 +83,22 @@ function subtractHandler() {
 
   // read a number from the user
 
+  const input = prompt('Write Some Number');
+  if (input === null || input === "") {
+    alert('Please enter a valid number');
+  } else {
+    let inputConfirmed = +input;
+    if (Object.is(inputConfirmed, NaN)) { alert('Be sure you are entering a number! Try again. '); }
+    else {
+      // subtract the last result by the user's number and reassign lastResult
+      lastResult = subtract(lastResult, inputConfirmed);
+      // display for use
+      alert(`The result is ${lastResult}`);
+      console.log('User Input:', typeof inputConfirmed, '\n', inputConfirmed);
+      // log for developers
+      console.log('lastResult (after):', typeof lastResult, '\n', lastResult);
+      
+    }
+  }
 
-  // subtract the last result by the user's number and reassign lastResult
-  _;
-  console.log('lastResult (after):', typeof lastResult, '\n', lastResult);
-
-  alert(`the new result is: ${lastResult}`);
 }
