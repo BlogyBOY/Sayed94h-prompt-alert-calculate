@@ -91,18 +91,14 @@ function subtractHandler() {
     if (Object.is(inputConfirmed, NaN)) { alert('Be sure you are entering a number! Try again. '); }
     else {
       // subtract the last result by the user's number and reassign lastResult
-      const result = subtract(inputConfirmed, lastResult);
+      lastResult = subtract(lastResult, inputConfirmed);
       // display for use
-      alert(`The result is ${result}`);
+      alert(`The result is ${lastResult}`);
       console.log('User Input:', typeof inputConfirmed, '\n', inputConfirmed);
-      console.log('lastResult (before):', typeof lastResult, '\n', lastResult);
-      lastResult = result;
       // log for developers
       console.log('lastResult (after):', typeof lastResult, '\n', lastResult);
       
     }
-
-  alert(`the new result for shared variable is: ${lastResult}`);
   }
 
 }
