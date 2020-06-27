@@ -88,11 +88,13 @@ function multiplyHandler() {
       alert("Please enter some number. The input can not be empty")
       input1 = prompt("You have to enter some number");
     }
-  const num1 = Number(input1);
-
-  // multiply the last result by the user's number and reassign lastResult
-  lastResult = multiply(lastResult, num1);
+    let inputConfirmed = +input1;
+		if (Object.is(inputConfirmed, NaN)) { 
+      alert('Be sure you are entering a number! Try again. ');   
+    } else {
+		  // divide the last result by the user's number and reassign lastResult
+  lastResult = multiply(lastResult, inputConfirmed);
   console.log('lastResult (after):', typeof lastResult, '\n', lastResult);
-
   alert(`the new result is: ${lastResult}`);
+  }
 }

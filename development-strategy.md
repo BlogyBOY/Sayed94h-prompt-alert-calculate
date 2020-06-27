@@ -4,8 +4,6 @@
 
 This repo is created in order to develop debugging skills in HTML / CSS and JavaScript 
 
-# WireFrame
-
 ## 0. Set-Up
 
 __A User can see a empty site at the correct URL__
@@ -19,7 +17,6 @@ __A User can see a empty site at the correct URL__
 1. Add collaborators
 1. Add a license
 1. Create a README
-1. Add [this wireframe](wireFrame.png)
 1. turn on GitHub Pages
 1. Write a development strategy
 1. Translate the strategy into issues
@@ -52,8 +49,8 @@ __As a site visitor, I want to execute the function `add`__
 
 ### Repo
 
-- [ ] developed on a branch named `addition`
-- [ ] finish the function 'add.js`
+- [x] developed on a branch named `addition`
+- [x] finish the function 'add.js`
 
 ---
 
@@ -65,8 +62,8 @@ __As a site visitor, I want to execute the function `divide`__
 
 ### Repo
 
-- [ ] developed on a branch named `divide`
-- [ ] finish the function 'divide.js`
+- [x] developed on a branch named `divide`
+- [x] finish the function 'divide.js`
 
 ---
 
@@ -78,8 +75,8 @@ __As a site visitor, I want to execute the function `multiply`__
 
 ### Repo
 
-- [ ] developed on a branch named `multiply`
-- [ ] finish the function 'multiply.js`
+- [x] developed on a branch named `multiply`
+- [x] finish the function 'multiply.js`
 
 ---
 
@@ -110,7 +107,8 @@ __As a perfectionist, I want everything perfect :)__
 
 ### Repo
 
-- [ ] developed on a branch named `finishing`
-- [ ] 
-
-### Development-Strategy
+- [x] developed on a branch named `finishing`
+- [x] fixing css `Centered` class
+- [x] fixing add.js handler problems with `NaN`;
+- [x] fixing divide.js handler problems with `NaN`;
+- [x] fixing multiply.js handler problems with `NaN`;

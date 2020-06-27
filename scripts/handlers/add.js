@@ -9,12 +9,8 @@ console.log('-- loading: add --');
  * @returns {number}
  */
 function add(x, y) {
-	if (typeof x !== 'number') {
-		throw new TypeError('x');
-	}
-	if (typeof y !== 'number') {
-		throw new TypeError('y');
-	}
+	if (typeof x !== 'number') { throw new TypeError('x'); }
+	if (typeof y !== 'number') { throw new TypeError('y'); }
 
 	const result = x + y;
 
@@ -87,13 +83,18 @@ function addHandler() {
 	console.log('lastResult (before):', typeof lastResult, '\n', lastResult);
 
 	// read a number from the user
-	const x = prompt(' enter a numbers ');
-	const y = Number(x);
+	const input = prompt(' enter a numbers ');
+	if (input === null || input === "") {
+		alert('Please enter a valid number');
+	  } else {
+		let inputConfirmed = +input;
+		if (Object.is(inputConfirmed, NaN)) { alert('Be sure you are entering a number! Try again. '); }
+		else {
+		  // add the last result by the user's number and reassign lastResult
+		  lastResult = add(lastResult, inputConfirmed);
+		  console.log('lastResult (after):', typeof lastResult, '\n', lastResult);
 
-	// add the user's number to the last result and reassign lastResult
-	const result = add(x, y);
-	lastResult = add(lastResult, y);
-	console.log('lastResult (after):', typeof lastResult, '\n', lastResult);
-
-	alert(`the new result is: ${lastResult}`);
+		  alert(`the new result is: ${lastResult}`);
+		}
+	}
 }
