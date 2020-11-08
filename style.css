@@ -1,12 +1,43 @@
+body {
+	margin: 0;
+	background-color: rgb(61, 158, 190);
+}
 
+header {
+	text-align: center;
+	color: #fff;
+	background-color: rgba(182, 203, 226, 0.6);
+	width: 40%;
+	margin-left: 30%;
+	border-radius: 9px;
+}
 
+header h1 {
+	margin-top: 5vh;
+	padding: 2vh;
+	margin-bottom: 5vh;
+}
 .centered {
-    margin-top: 15%;
-    text-align: center;
+	margin-top: 1%;
+	text-align: center;
+	width: 40%;
+	margin-left: 30%;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 9px;
+	padding-bottom: 2%;
+	align-items: center;
 }
 
 .centered button {
-
-    margin-top: 3vh;
+	margin-top: 3vh;
+	width: 40%;
+	padding: 8px;
+	cursor: pointer;
+	background-color: rgb(25, 146, 187);
+	color: #fff;
+	border-radius: 4px;
+	border: cornflowerblue 1px solid;
 }
-
+.centered button:hover {
+	background-color: blueviolet;
+}
